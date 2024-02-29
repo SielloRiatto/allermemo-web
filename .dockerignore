@@ -1,4 +1,9 @@
+Dockerfile
+.dockerignore
 node_modules
+npm-debug.log
 *.md
-LICENSE
+.next
+.git
 .gitignore
+LICENSE
