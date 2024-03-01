@@ -12,7 +12,7 @@ COPY --from=installation /app/.eslintrc.json /app/next.config.mjs /app/next-env.
 COPY --from=installation /app/public ./public
 COPY --from=installation /app/package.json /app/package-lock.json ./
 COPY --from=installation /app/node_modules ./node_modules
-COPY --from=installation /app/app ./app
+COPY --from=installation /app/src ./src
 RUN npm run build
 
 # Stage 3: Serve Production Build
